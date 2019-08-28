@@ -42,7 +42,7 @@
 				  if ($row['grade_4'] < $min and $row['grade_4'] > 0) { $min=$row['grade_4'];}?></td>
 		<td><?php if ($count>2){echo round(($sum-$min)/($count-1),2);} 
 					else {echo round($sum/$count,2);} ?></td>
-		<td><?php if($sum/$count>=7) {echo "YES";} else {echo "NO";} ?></td>		
+		<td><?php echo $pass; ?></td>		
 	</tr>
 		<?php } ?>
 	</table>
